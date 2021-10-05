@@ -1,0 +1,20 @@
+{
+  "Name": "Hej med dig",
+
+  "Number": 8,
+  "List": [
+    "Sussane",
+    8,
+    true
+  ],
+  "Lol": [
+    {
+      "key": "value"
+    },
+    {
+      "Number": 8
+    }
+  ],
+  "Return false": false,
+  "key": "no"
+}

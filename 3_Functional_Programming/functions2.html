@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions 2</title>
+</head>
+<body>
+  <script>
+
+      const myFavoriteThings = ["java", "🍆", false];
+
+      function printer(something, index){
+          console.log(something, index)
+      }
+      //HOF (Higher order Function) - A function that takes a function as argument
+      //myFavoriteThings.forEach(element => printer(element))
+      // element => printer(element) og element -> printer(element) -
+      // er det samme bare det ene er i javaScript og det andet er i java - kaldes lamda
+      // forEach er en function som tager printer som argument(Det er også en function)
+      //myFavoriteThings.forEach((element, index, list) => printer(element))
+
+
+      myFavoriteThings.forEach(console.log)
+
+
+      /*const greetings = function(){
+          console.log("Hello")
+      }
+
+      function whoToGreet(){
+          greetings();
+          console.log("World")
+      }
+
+      whoToGreet()*/
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functional programming</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+        /*function greetings(){
+            if (true) {
+                console.log("Hello")
+            }else {
+                return;
+            }
+        }
+        greetings();*/
+
+        const greetings = function() {
+            console.log("hello world")
+        }
+        greetings()
+
+        function returnAFunction(){
+            return greetings()
+        }
+        console.log(returnAFunction())
+    </script>
+
+
+
+</body>
+</html>
