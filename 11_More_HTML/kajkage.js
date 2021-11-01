@@ -15,7 +15,7 @@ const kajkager = [{
 ];
 
 kajkager.push({
-    type: "Andrea",
+    type: "BO",
     color: "blue",
     deliciosness: 8
 }
@@ -27,4 +27,19 @@ console.log(kajkager)
 
 const tbodyElement = document.getElementById("cake-tbody");
 
-tbodyElement.
+const hardCaketData = {
+    type: "Kaj",
+    color: "green",
+    deliciosness: 10
+}
+
+kajkager.map(cake => {
+    const tableRowElement = document.createElement("tr");
+
+    tableRowElement.innerHTML = `
+            <td>${escapeHTML(cake.type)}</td>
+            <td>${escapeHTML(cake.color)}</td>
+            <td>${escapeHTML(cake.deliciosness.toString())}/10</td>
+`;
+    tbodyElement.appendChild(tableRowElement);
+});
