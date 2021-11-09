@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="artist.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="../global.css">
+    <script src="../lib/HTMLEscape.js"></script>
+    <script src="../global.js"></script>
+    <title>Artist</title>
 </head>
 <body>
+<nav>
+    <a href="../frontpage/index.html">
+        <img id="logo" src="../frontpage/art_logo.jpg" alt="logo">
+    </a>
+    <a href="../artists/artist.html">Artists</a>
+    <a href="../paintings/painting.html">Paintings</a>
+    <a href="../galleries/galleries.html">Galleries</a>
+</nav>
+
+<h1>Welcome to artist</h1>
+
+<div id="create-artist-wrapper">
+    <input id="create-artist-name" placeholder="name">
+    <input type="number" min="0" max="150" id="create-artist-age" placeholder="age">
+    <input id="create-artist-image" placeholder="image">
+    <select id="create-artist-gender">
+        <option>MALE</option>
+        <option>FEMALE</option>
+        <option>OTHER</option>
+    </select>
+    <button id="create-artist-button" onclick="createNewArtist()">Create new artist</button>
+</div>
+
+<div id="artists"></div>
 
 <script src="artist.js"></script>
 </body>
